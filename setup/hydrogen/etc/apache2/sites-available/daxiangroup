@@ -1,0 +1,16 @@
+<VirtualHost *:80>
+        ServerName      daxiangroup.com
+        ServerAlias     www.daxiangroup.com
+        ServerAlias     tmp.daxiangroup.com
+        DocumentRoot    /opt/sites/daxiangroup
+        DirectoryIndex  index.php
+        LogFormat "%h %{Host}i %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" vhost_ss
+        CustomLog /var/log/apache2/daxiangroup_access.log vhost_ss
+        ErrorLog /var/log/apache2/daxiangroup_error.log
+        <Directory /opt/sites/daxiangroup>
+                Options None
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+</VirtualHost>

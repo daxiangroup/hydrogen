@@ -1,0 +1,8 @@
+Package: dg-hydrogen
+Version: 1
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash
+Maintainer: ts@daxiangroup.com
+Description: Base installation for hydrogen

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+a2ensite daxiangroup
+
+apachectl start
