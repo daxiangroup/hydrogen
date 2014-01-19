@@ -1,0 +1,8 @@
+Package: dg-site-daxiangroup
+Version: 130316
+Section: base
+Priority: optional
+Architecture: all
+Depends: apache2, php5
+Maintainer: ts@daxiangroup.com
+Description: No Description
